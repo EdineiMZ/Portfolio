@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Edinei Zanol · Desenvolvedor full stack</title>
+  <meta name="description" content="Edinei Zanol, desenvolvedor full stack em São Miguel do Oeste/SC. Sistemas com PostgreSQL, APIs e IA aplicada em uso de verdade.">
+  <meta name="author" content="Edinei Miguel Zanol">
+  <meta name="theme-color" content="#0B0B0C">
+  <link rel="canonical" href="https://edineizanol.dev/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://edineizanol.dev/">
+  <meta property="og:title" content="Edinei Zanol · Desenvolvedor full stack">
+  <meta property="og:description" content="Sistemas com PostgreSQL, APIs e IA aplicada em uso de verdade.">
+  <meta property="og:image" content="https://edineizanol.dev/imgs/profile.jpg">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230B0B0C'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-weight='700' font-size='30' fill='%23B8F36B'%3EEZ%3C/text%3E%3C/svg%3E">
+
+  <script>
+    (function () {
+      var d = document.documentElement, t = null, l = null;
+      d.classList.add('js');
+      try { t = localStorage.getItem('theme'); l = localStorage.getItem('lang'); } catch (e) {}
+      if (t !== 'light' && t !== 'dark') {
+        try { t = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark'; } catch (e) { t = 'dark'; }
+      }
+      d.dataset.theme = t;
+      if (l !== 'pt' && l !== 'en') l = (navigator.language || '').toLowerCase().indexOf('en') === 0 ? 'en' : 'pt';
+      if (l === 'en') d.classList.add('lang-pending');
+      // Se o main.js não carregar, mostra tudo em PT em vez de deixar a página vazia.
+      setTimeout(function () {
+        if (!d.classList.contains('ready')) d.classList.remove('js', 'lang-pending');
+      }, 1500);
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.19.0/dist/tabler-icons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="module" src="js/main.js"></script>
+</head>
+<body>
+  <a class="skip" href="#conteudo" data-i18n="skip">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#topo">Edinei Zanol</a>
+      <nav class="nav" aria-label="Principal" data-i18n-attr="aria-label:nav_label">
+        <a href="#projetos" data-i18n="nav_projects">Projetos</a>
+        <a href="#como-trabalho" data-i18n="nav_how">Como trabalho</a>
+        <a href="#trajetoria" data-i18n="nav_path">Trajetória</a>
+        <a href="#contato" data-i18n="nav_contact">Contato</a>
+      </nav>
+      <div class="toggles">
+        <button class="icon-btn" id="lang-toggle" type="button" aria-label="Switch to English" data-i18n-attr="aria-label:lang_toggle_label">
+          <span class="lang-label" data-i18n="lang_toggle">EN</span>
+        </button>
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Alternar tema claro ou escuro" data-i18n-attr="aria-label:theme_toggle_label">
+          <i class="ti ti-sun icon-light" aria-hidden="true"></i>
+          <i class="ti ti-moon icon-dark" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" id="topo">
+      <div class="container">
+        <p class="eyebrow" data-i18n="hero_eyebrow">Desenvolvedor full stack · São Miguel do Oeste, SC</p>
+        <h1 class="hero-title" data-i18n="hero_title">Construo sistemas com PostgreSQL, APIs e IA que estão em uso de verdade.</h1>
+        <p class="hero-sub" data-i18n="hero_sub">Do banco de dados à tela: modelo os dados, escrevo a API, integro a IA e mantenho o sistema rodando depois da entrega.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projetos" data-i18n="cta_projects">Ver projetos</a>
+          <a class="btn btn-ghost" href="#contato" data-i18n="cta_contact">Vamos conversar</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="proof" aria-label="Destaques" data-i18n-attr="aria-label:proof_label">
+      <div class="container proof-grid">
+        <div class="proof-item reveal">
+          <i class="ti ti-server-2" aria-hidden="true"></i>
+          <div>
+            <p class="proof-value" data-i18n="proof1_value">Em produção</p>
+            <p class="proof-label" data-i18n="proof1_label">Sistema para cliente rodando desde mai/2026</p>
+          </div>
+        </div>
+        <div class="proof-item reveal">
+          <i class="ti ti-trophy" aria-hidden="true"></i>
+          <div>
+            <p class="proof-value" data-i18n="proof2_value">3º lugar</p>
+            <p class="proof-label" data-i18n="proof2_label">Hackathon Inova+Saúde 2026</p>
+          </div>
+        </div>
+        <div class="proof-item reveal">
+          <i class="ti ti-shield-check" aria-hidden="true"></i>
+          <div>
+            <p class="proof-value" data-i18n="proof3_value">2024–2026</p>
+            <p class="proof-label" data-i18n="proof3_label">Seção de TI do Exército Brasileiro</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projetos">
+      <div class="container">
+        <header class="section-head">
+          <p class="kicker" data-i18n="projects_kicker">Projetos em destaque</p>
+          <h2 data-i18n="projects_title">Sistemas reais, com decisões explicadas</h2>
+        </header>
+
+        <article class="case reveal" id="ruralpro">
+          <!-- IMAGEM: imgs/ruralpro.webp — print do painel principal do RuralPro (sem dados do cliente) -->
+          <div class="case-media">
+            <div class="media-placeholder"><i class="ti ti-photo" aria-hidden="true"></i><span data-i18n="img_soon">Imagem em breve</span></div>
+          </div>
+          <div class="case-body">
+            <p class="status status-live"><span class="dot" aria-hidden="true"></span><span data-i18n="rp_status">Em produção para cliente</span></p>
+            <h3>RuralPro</h3>
+            <p class="case-lead" data-i18n="rp_lead">Gestão rural sob medida para um cliente: rebanho, lavouras e leitura de documentos com IA.</p>
+            <dl class="case-points">
+              <div><dt data-i18n="label_problem">Problema</dt><dd data-i18n="rp_problem">O produtor controlava animais, safra e despesas em planilha e papel, sem visão do todo.</dd></div>
+              <div><dt data-i18n="label_did">O que fiz</dt><dd data-i18n="rp_did">Desenvolvi o sistema completo, do banco ao front, e cuido da hospedagem, dos backups e do e-mail transacional.</dd></div>
+              <div><dt data-i18n="label_result">Resultado</dt><dd data-i18n="rp_result">No ar desde maio de 2026. Corrijo bugs pelo contrato e o cliente segue pedindo evoluções.</dd></div>
+            </dl>
+            <details class="tech">
+              <summary data-i18n="tech_details">Detalhes técnicos</summary>
+              <ul>
+                <li data-i18n="rp_t1">API e frontend na mesma VPS, gerenciados com PM2 para facilitar a manutenção.</li>
+                <li data-i18n="rp_t2">Domínio próprio, e-mail transacional com Resend e redefinição de senha validada.</li>
+                <li data-i18n="rp_t3">Última atualização já preparada para migrar o cliente para uma VPS dedicada sem retrabalho.</li>
+              </ul>
+            </details>
+            <ul class="tags"><li>Node.js</li><li>PostgreSQL</li><li data-i18n="tag_ai_docs">IA para documentos</li><li>PM2</li><li>Resend</li></ul>
+          </div>
+        </article>
+
+        <article class="case reveal" id="agrivor">
+          <!-- IMAGEM: imgs/agrivor.webp — tela de conferência da importação de nota por IA (itens extraídos e editáveis) -->
+          <div class="case-media">
+            <div class="media-placeholder"><i class="ti ti-photo" aria-hidden="true"></i><span data-i18n="img_soon">Imagem em breve</span></div>
+          </div>
+          <div class="case-body">
+            <p class="status status-test"><span class="dot" aria-hidden="true"></span><span data-i18n="ag_status">Em testes com produtores</span></p>
+            <h3>AGRIVOR</h3>
+            <p class="case-lead" data-i18n="ag_lead">SaaS de gestão rural. A evolução do RuralPro para atender várias propriedades e empresas.</p>
+            <dl class="case-points">
+              <div><dt data-i18n="label_problem">Problema</dt><dd data-i18n="ag_problem">Lançar despesa por despesa é o que faz o produtor desistir de qualquer sistema e voltar pro caderno.</dd></div>
+              <div><dt data-i18n="label_did">O que fiz</dt><dd data-i18n="ag_did">Importação por IA de notas, PDFs, XML, fotos e até páginas de caderno escritas à mão, além de lançamento por chat em linguagem natural.</dd></div>
+              <div><dt data-i18n="label_result">Resultado</dt><dd data-i18n="ag_result">Meses de histórico viram poucas fotos. Testadores usam no dia a dia e trazem sugestões, não bugs.</dd></div>
+            </dl>
+            <details class="tech">
+              <summary data-i18n="tech_details">Detalhes técnicos</summary>
+              <ul>
+                <li data-i18n="ag_t1_html">A IA <strong>nunca lança sozinha</strong>: gera uma tela de conferência com os itens extraídos, valores editáveis e confiança por trecho, destacando partes ilegíveis.</li>
+                <li data-i18n="ag_t2">Multiempresa e multipropriedade, com módulos de finanças, rebanho, lavouras, leite, maquinário e CRM rural.</li>
+                <li data-i18n="ag_t3">Suporte com agentes de IA e modelo local que consultam a documentação escrita junto com o sistema.</li>
+                <li data-i18n="ag_t4">Cobrança por módulos e créditos de IA, com limites de uso por plano.</li>
+              </ul>
+            </details>
+            <ul class="tags"><li>PostgreSQL</li><li data-i18n="tag_vision">Visão computacional</li><li>LLM</li><li data-i18n="tag_multitenant">Multiempresa</li></ul>
+          </div>
+        </article>
+
+        <article class="case reveal" id="bus">
+          <!-- IMAGEM: imgs/bus.webp — slide do pitch ou tela do alerta de exame já existente -->
+          <div class="case-media">
+            <div class="media-placeholder"><i class="ti ti-photo" aria-hidden="true"></i><span data-i18n="img_soon">Imagem em breve</span></div>
+          </div>
+          <div class="case-body">
+            <p class="status status-award"><span class="dot" aria-hidden="true"></span><span data-i18n="bus_status">3º lugar · Hackathon Inova+Saúde 2026</span></p>
+            <h3>BUS · Base Única de Saúde</h3>
+            <p class="case-lead" data-i18n="bus_lead">Um alerta que avisa o profissional, na hora do pedido, que aquele exame já foi feito.</p>
+            <dl class="case-points">
+              <div><dt data-i18n="label_problem">Problema</dt><dd data-i18n="bus_problem">Na nossa pesquisa, 79,4% dos pacientes já tinham repetido exame e 64% dos profissionais relataram atraso por falta de histórico.</dd></div>
+              <div><dt data-i18n="label_did">O que fiz</dt><dd data-i18n="bus_did">Ideia, pesquisa com 48 pessoas, MVP e pitch em 3 dias, construindo sobre a rede nacional de dados de saúde em vez de concorrer com ela.</dd></div>
+              <div><dt data-i18n="label_result">Resultado</dt><dd data-i18n="bus_result">3º lugar no hackathon promovido por SMO Hub e Senac.</dd></div>
+            </dl>
+            <details class="tech">
+              <summary data-i18n="tech_details">Detalhes técnicos</summary>
+              <ul>
+                <li data-i18n="bus_t1">Separação entre metadado (data, local, validade clínica) e conteúdo clínico.</li>
+                <li data-i18n="bus_t2">Acesso ao conteúdo com autorização biométrica do paciente e acesso emergencial auditado.</li>
+                <li data-i18n="bus_t3">O alerta informa, nunca bloqueia: a decisão continua sendo do profissional.</li>
+              </ul>
+            </details>
+            <ul class="tags"><li data-i18n="tag_research">Pesquisa com usuários</li><li>MVP</li><li data-i18n="tag_privacy">Privacidade (LGPD)</li></ul>
+          </div>
+        </article>
+
+        <article class="case reveal" id="ciel">
+          <!-- IMAGEM: imgs/ciel.webp — HUD do app ou overlay no desktop -->
+          <div class="case-media">
+            <div class="media-placeholder"><i class="ti ti-photo" aria-hidden="true"></i><span data-i18n="img_soon">Imagem em breve</span></div>
+          </div>
+          <div class="case-body">
+            <p class="status status-dev"><span class="dot" aria-hidden="true"></span><span data-i18n="ciel_status">Projeto pessoal em desenvolvimento</span></p>
+            <h3>CIEL</h3>
+            <p class="case-lead" data-i18n="ciel_lead">Assistente pessoal por voz, local-first, que controla o computador e cria as próprias habilidades com supervisão.</p>
+            <dl class="case-points">
+              <div><dt data-i18n="label_problem">Problema</dt><dd data-i18n="ciel_problem">Assistentes comerciais dependem da nuvem e não deixam você decidir o que eles podem fazer na sua máquina.</dd></div>
+              <div><dt data-i18n="label_did">O que fiz</dt><dd data-i18n="ciel_did">Núcleo próprio que roda em casa, agente no Windows com voz e app mobile. Modelos locais para o simples, modelo maior só quando precisa.</dd></div>
+              <div><dt data-i18n="label_result">Resultado</dt><dd data-i18n="ciel_result">Já conversa por voz, controla o PC e propõe melhorias no próprio código, que só entram com aprovação.</dd></div>
+            </dl>
+            <details class="tech">
+              <summary data-i18n="tech_details">Detalhes técnicos</summary>
+              <ul>
+                <li data-i18n="ciel_t1">Núcleo em NestJS com PostgreSQL e pgvector em Docker; agente nativo em Python; app em Flutter.</li>
+                <li data-i18n="ciel_t2">Automelhoria em branches separadas, com testes e merge só com a minha aprovação. Próximo passo: um verificador independente, que ela não pode editar, para reverter versões quebradas sozinho.</li>
+                <li data-i18n="ciel_t3">Permissões por habilidade e confirmação obrigatória para ações sensíveis. Conteúdo da tela é tratado como dado, nunca como ordem.</li>
+              </ul>
+            </details>
+            <ul class="tags"><li>NestJS</li><li>pgvector</li><li>Python</li><li>Flutter</li><li>Docker</li></ul>
+          </div>
+        </article>
+
+        <h3 class="subhead reveal" data-i18n="more_title">Outros projetos</h3>
+        <div class="mini-grid">
+          <article class="mini reveal">
+            <!-- IMAGEM (opcional): imgs/helpdesk.webp — tela de chamados -->
+            <i class="ti ti-ticket mini-icon" aria-hidden="true"></i>
+            <h4 data-i18n="hd_title">Helpdesk de TI</h4>
+            <p data-i18n="hd_text">Sistema de chamados para uma instituição pública, 100% auto-hospedado e sem dependências externas: autenticação própria, protocolo numerado e inventário de rede com tipos INET e MACADDR do PostgreSQL.</p>
+            <ul class="tags"><li>PostgreSQL</li><li>JWT</li><li>Self-hosted</li></ul>
+          </article>
+          <article class="mini reveal">
+            <!-- IMAGEM (opcional): imgs/moji-dojo.webp — tela do modo de escrita -->
+            <i class="ti ti-language-hiragana mini-icon" aria-hidden="true"></i>
+            <h4>Moji Dojo</h4>
+            <p data-i18n="mj_text">App de estudo de japonês (hiragana, katakana e kanji N5) com repetição espaçada e um modo em que você desenha o caractere e o app avalia a similaridade.</p>
+            <ul class="tags"><li>React Native</li><li data-i18n="tag_opensource">Código aberto</li></ul>
+            <a class="link" href="https://github.com/EdineiMZ/Moji-Dojo" target="_blank" rel="noopener noreferrer"><span data-i18n="mj_link">Ver no GitHub</span> <i class="ti ti-arrow-up-right" aria-hidden="true"></i></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="como-trabalho">
+      <div class="container">
+        <header class="section-head">
+          <p class="kicker" data-i18n="how_kicker">Como eu trabalho</p>
+          <h2 data-i18n="how_title">Entregar é metade. A outra metade é manter.</h2>
+        </header>
+        <div class="principles">
+          <div class="principle reveal">
+            <i class="ti ti-user-check" aria-hidden="true"></i>
+            <h3 data-i18n="p1_title">IA sugere, humano confirma</h3>
+            <p data-i18n="p1_text">Nenhum lançamento feito por IA entra sem alguém conferir. Já desfiz automação que parecia prática mas não era segura.</p>
+          </div>
+          <div class="principle reveal">
+            <i class="ti ti-lock" aria-hidden="true"></i>
+            <h3 data-i18n="p2_title">Segurança desde o início</h3>
+            <p data-i18n="p2_text">Isolamento de dados por cliente no próprio banco e testes de invasão nos meus sistemas antes de alguém de fora fazer.</p>
+          </div>
+          <div class="principle reveal">
+            <i class="ti ti-notebook" aria-hidden="true"></i>
+            <h3 data-i18n="p3_title">Documentação junto com o código</h3>
+            <p data-i18n="p3_text">Escrevo a documentação enquanto desenvolvo. Ela serve para a equipe, para o cliente e para os agentes de suporte.</p>
+          </div>
+          <div class="principle reveal">
+            <i class="ti ti-tool" aria-hidden="true"></i>
+            <h3 data-i18n="p4_title">Eu cuido do que entrego</h3>
+            <p data-i18n="p4_text">Servidor, backup, correções e evolução. O sistema no ar é responsabilidade minha, não só a entrega.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="trajetoria">
+      <div class="container about">
+        <div class="about-text">
+          <header class="section-head">
+            <p class="kicker" data-i18n="about_kicker">Sobre e trajetória</p>
+            <h2 data-i18n="about_title">Autodidata que aprendeu resolvendo problema de verdade</h2>
+          </header>
+          <p data-i18n="about_p1">Comecei com scripts e servidores de jogo, passei pelo suporte de sistemas de PDV e pela TI do Exército, e hoje desenvolvo produtos próprios. O suporte me ensinou a ouvir o usuário. A TI me ensinou a cuidar de rede, servidor e gente que precisa que tudo funcione.</p>
+          <ol class="timeline">
+            <li class="reveal"><span class="when">2024 – 2026</span><div><strong data-i18n="tl1_title">TI · Exército Brasileiro</strong><p data-i18n="tl1_text">Hardware, redes, servidores e sistemas internos na seção de TI de um regimento.</p></div></li>
+            <li class="reveal"><span class="when">2024</span><div><strong data-i18n="tl2_title">Analista de suporte · Sysmo Sistemas</strong><p data-i18n="tl2_text">Suporte a PDV de supermercados: caixas, impressoras, maquininhas e NFC-e/NF-e.</p></div></li>
+            <li class="reveal"><span class="when">2021</span><div><strong data-i18n="tl3_title">Auxiliar de escritório · Dipaes</strong><p data-i18n="tl3_text">Primeiro emprego: notas fiscais, pedidos e rotinas administrativas.</p></div></li>
+          </ol>
+          <p class="events"><span data-i18n="events_label">Eventos:</span> Hackathon Inova+Saúde 2026 · Startup Weekend SMO 2024 · Latinoware 2022</p>
+          <p class="education"><i class="ti ti-school" aria-hidden="true"></i> <span data-i18n="education">Ciência da Computação · Unoesc (em retomada)</span></p>
+        </div>
+        <figure class="about-photo reveal">
+          <img src="imgs/profile.jpg" alt="Foto de Edinei Zanol" data-i18n-attr="alt:photo_alt" width="420" height="420" loading="lazy">
+        </figure>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="stack">
+      <div class="container">
+        <header class="section-head">
+          <p class="kicker" data-i18n="stack_kicker">Ferramentas</p>
+          <h2 data-i18n="stack_title">O que uso no dia a dia</h2>
+        </header>
+        <div class="stack-grid">
+          <div class="stack-group reveal">
+            <h3 data-i18n="st1_title">Backend e dados</h3>
+            <ul class="tags"><li>Node.js</li><li>NestJS</li><li>TypeScript</li><li>Python</li><li>PostgreSQL</li><li data-i18n="st_rls">RLS e multitenancy</li><li>PgBouncer</li><li>Drizzle ORM</li><li>REST APIs</li></ul>
+          </div>
+          <div class="stack-group reveal">
+            <h3 data-i18n="st2_title">Frontend e mobile</h3>
+            <ul class="tags"><li>HTML e CSS</li><li>JavaScript</li><li>Next.js</li><li>React Native</li><li>Flutter</li></ul>
+          </div>
+          <div class="stack-group reveal">
+            <h3 data-i18n="st3_title">IA aplicada</h3>
+            <ul class="tags"><li data-i18n="st_extract">Extração de documentos</li><li data-i18n="st_local">LLMs locais</li><li data-i18n="st_router">Roteamento de modelos</li><li data-i18n="st_agents">Agentes de suporte</li><li>pgvector</li></ul>
+          </div>
+          <div class="stack-group reveal">
+            <h3 data-i18n="st4_title">Infra e segurança</h3>
+            <ul class="tags"><li>Linux</li><li>VPS</li><li>Docker</li><li>PM2</li><li>Cloudflare</li><li data-i18n="st_pentest">Pentest em apps próprios</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contato">
+      <div class="container contact-inner">
+        <p class="kicker" data-i18n="contact_kicker">Contato</p>
+        <h2 class="contact-title" data-i18n="contact_title">Vamos conversar</h2>
+        <p class="contact-sub" data-i18n="contact_sub">Seja sobre uma vaga, um projeto ou só para trocar ideia sobre um problema difícil.</p>
+        <a class="contact-mail" href="mailto:contato@edineizanol.dev">contato@edineizanol.dev</a>
+        <div class="contact-links">
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/edinei-miguel-zanol-0718b3266" target="_blank" rel="noopener noreferrer"><i class="ti ti-brand-linkedin" aria-hidden="true"></i> LinkedIn</a>
+          <a class="btn btn-ghost" href="https://github.com/EdineiMZ" target="_blank" rel="noopener noreferrer"><i class="ti ti-brand-github" aria-hidden="true"></i> GitHub</a>
+          <a class="btn btn-ghost" href="https://wa.me/5549991943662" target="_blank" rel="noopener noreferrer"><i class="ti ti-brand-whatsapp" aria-hidden="true"></i> WhatsApp</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Edinei Zanol</p>
+      <p data-i18n="footer_note">Feito à mão com HTML, CSS e JavaScript.</p>
+    </div>
+  </footer>
+</body>
+</html>
