@@ -36,12 +36,25 @@ test('links de contato corretos', () => {
 test('cada destaque tem placeholder de imagem comentado', () => {
   const cases = doc.querySelectorAll('.case');
   assert.equal(cases.length, 4);
-  cases.forEach(c => assert.ok(c.querySelector('.media-placeholder'), c.id));
-  assert.ok((html.match(/<!-- IMAGEM/g) || []).length >= 6);
+  cases.forEach(c => assert.ok(c.querySelector('.media-placeholder, .case-media img'), c.id));
+  assert.ok((html.match(/<!-- IMAGEM/g) || []).length + doc.querySelectorAll('img.mini-media, .case-media img').length >= 6);
 });
 
 test('CIEL não afirma que o verificador (Guardião) já existe', () => {
   const t = (doc.body.textContent + JSON.stringify(dict.en)).toLowerCase();
   assert.ok(!t.includes('reverte versões quebradas'));
   assert.ok(!t.includes('rolls back broken versions'));
+});
+
+test('AGRIVOR não afirma que a IA nunca lança sozinha (existe modo automático opcional)', () => {
+  const t = (doc.body.textContent + JSON.stringify(dict.en)).toLowerCase();
+  assert.ok(!t.includes('nunca lança sozinha'));
+  assert.ok(!t.includes('never posts on its own'));
+  assert.ok(!t.includes('nenhum lançamento feito por ia entra sem'));
+});
+
+test('BUS não afirma MVP construído (foi só pesquisa e apresentação)', () => {
+  const bus = doc.querySelector('#bus');
+  const t = (bus.textContent + dict.en.bus_did).toLowerCase();
+  assert.ok(!/\bmvp\b/.test(t), 'BUS não deve citar MVP');
 });

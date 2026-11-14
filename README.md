@@ -11,18 +11,11 @@ python3 -m http.server 8000
 # abra http://localhost:8000
 ```
 
-## Trocar os placeholders pelas imagens
+## Imagens
 
-Cada lugar de imagem tem um comentário `<!-- IMAGEM: imgs/nome.webp — descrição -->`.
+Ficam em `imgs/` (WebP). Para trocar uma, substitua o arquivo mantendo o nome e a proporção: 16:11 nos projetos em destaque, 16:9 nos cards menores. Se mudar o tamanho, ajuste `width` e `height` da tag `<img>`.
 
-1. Salve a imagem em `imgs/` com o nome indicado (WebP, ~1600px de largura, proporção 16:11).
-2. Troque o bloco `<div class="media-placeholder">…</div>` logo abaixo do comentário por:
-
-```html
-<img src="imgs/ruralpro.webp" alt="Painel principal do RuralPro" width="1600" height="1100" loading="lazy">
-```
-
-Nos "Outros projetos", a imagem é opcional. Se usar, coloque o `<img>` no lugar do ícone.
+Para um projeto novo sem imagem ainda, use o bloco `<div class="media-placeholder">` (o estilo continua no CSS).
 
 ## Textos e traduções
 
